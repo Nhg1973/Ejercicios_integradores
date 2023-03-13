@@ -1,3 +1,20 @@
+
+"""
+La función calcular_mcd() recibe dos argumentos num1 y num2 que corresponden a los números para los que se quiere calcular el MCD. 
+La función utiliza math.gcd() para calcular el MCD y lo retorna.
+"""
+import math
+
+def calcular_mcd(num1, num2):
+    return math.gcd(num1, num2)
+
+num1 = 12
+num2 = 18
+
+print("El MCD de", num1, "y", num2, "es:", calcular_mcd(num1, num2))
+
+
+
 def mcd(a, b):
     """
     Calcula el máximo común divisor (MCD) de dos números utilizando el algoritmo de Euclides.
@@ -13,3 +30,6 @@ def mcd(a, b):
 a = 24
 b = 36
 print("El MCD de", a, "y", b, "es", mcd(a, b))
+
+
+

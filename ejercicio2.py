@@ -1,3 +1,19 @@
+import math
+
+"""
+La función calcular_mcm() recibe dos argumentos num1 y num2 que corresponden a los números para los que se quiere calcular el mcm. 
+La función utiliza la fórmula: mcm(a, b) = |a*b| / gcd(a, b) para calcular el mcm y lo retorna.
+"""
+
+def calcular_mcm(num1, num2):
+    return abs(num1*num2)//math.gcd(num1, num2)
+
+num1 = 12
+num2 = 18
+
+print("El mcm de", num1, "y", num2, "es:", calcular_mcm(num1, num2))
+
+
 def mcm(a, b):
     """
     Calcula el mínimo común múltiplo (mcm) de dos números utilizando el máximo común divisor (MCD).
